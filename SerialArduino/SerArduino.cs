@@ -27,21 +27,31 @@ namespace SerialArduino
         }
 
         private void btnSave_Click(object sender, EventArgs e)
-        {        
-            
-            Serial serial = new Serial();
-            serial.setComPort(Convert.ToInt32(edtCom.Text));
-            serial.setBauds(Convert.ToInt32(edtBauds.Text));
-            serial.exec(serial.getComPort(), serial.getBauds());
+        {
+            try
+            {
+                Serial serial = new Serial();
+                serial.setComPort(Convert.ToInt32(edtCom.Text));
+                serial.setBauds(Convert.ToInt32(edtBauds.Text));
+                serial.exec(serial.getComPort(), serial.getBauds());
+            }catch(Exception error){
+                MessageBox.Show("Error: Set the config", "Error");
+            }
             
         }
 
         private void btnReceive_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Reading data...", "Serial Arduino");
-            while(loop){
-                lsbReceivedData.Items.Add(Serial.Receive(Serial.port));
-                Thread.Sleep(1000);
+            try
+            {
+                MessageBox.Show("Reading data...", "Serial Arduino");
+                while (loop)
+                {
+                    lsbReceivedData.Items.Add(Serial.Receive(Serial.port));
+                    Thread.Sleep(1000);
+                }
+            }catch(Exception error){
+                MessageBox.Show("Error: Set the config", "Error");
             }
         }
 
@@ -57,10 +67,15 @@ namespace SerialArduino
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            String data = edtCMD.Text;
-            Serial.Writing(Serial.port, data);
-            lsbSentData.Items.Add(data);
-            edtCMD.Text = "";
+            try
+            {
+                String data = edtCMD.Text;
+                Serial.Writing(Serial.port, data);
+                lsbSentData.Items.Add(data);
+                edtCMD.Text = "";
+            }catch(Exception error){
+                MessageBox.Show("Error: Set the config", "Error");
+            }
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
