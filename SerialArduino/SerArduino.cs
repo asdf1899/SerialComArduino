@@ -55,6 +55,14 @@ namespace SerialArduino
             lsbReceivedData.Items.Clear();
         }
 
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            String data = edtCMD.Text;
+            Serial.Writing(Serial.port, data);
+            lsbSentData.Items.Add(data);
+            edtCMD.Text = "";
+        }
+
     }
     public class Serial
     {
@@ -108,6 +116,9 @@ namespace SerialArduino
             }
 
         }
-
+        public static void Writing(SerialPort port, String data)
+        {
+            port.Write(data + "\n");
+        }
     }
 }

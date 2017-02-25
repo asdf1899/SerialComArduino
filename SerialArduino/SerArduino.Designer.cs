@@ -34,7 +34,7 @@
             this.lblBauds = new System.Windows.Forms.Label();
             this.grbConfig = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.edtCMD = new System.Windows.Forms.TextBox();
             this.lblCMD = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.lsbReceivedData = new System.Windows.Forms.ListBox();
@@ -115,13 +115,13 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // textBox1
+            // edtCMD
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox1.Location = new System.Drawing.Point(113, 169);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 5;
+            this.edtCMD.BackColor = System.Drawing.Color.Honeydew;
+            this.edtCMD.Location = new System.Drawing.Point(113, 169);
+            this.edtCMD.Name = "edtCMD";
+            this.edtCMD.Size = new System.Drawing.Size(120, 20);
+            this.edtCMD.TabIndex = 5;
             // 
             // lblCMD
             // 
@@ -142,6 +142,7 @@
             this.btnSend.TabIndex = 6;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // lsbReceivedData
             // 
@@ -272,7 +273,7 @@
             this.Controls.Add(this.lsbSentData);
             this.Controls.Add(this.lsbReceivedData);
             this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.edtCMD);
             this.Controls.Add(this.lblCMD);
             this.Controls.Add(this.grbConfig);
             this.Controls.Add(this.menu);
@@ -296,7 +297,7 @@
         private System.Windows.Forms.TextBox edtBauds;
         private System.Windows.Forms.Label lblBauds;
         private System.Windows.Forms.GroupBox grbConfig;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox edtCMD;
         private System.Windows.Forms.Label lblCMD;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.ListBox lsbReceivedData;
