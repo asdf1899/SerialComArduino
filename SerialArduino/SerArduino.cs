@@ -63,6 +63,16 @@ namespace SerialArduino
             edtCMD.Text = "";
         }
 
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Anas Araid", "About");
+        }
+
     }
     public class Serial
     {

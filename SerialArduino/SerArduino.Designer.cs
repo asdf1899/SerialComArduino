@@ -210,6 +210,7 @@
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -223,8 +224,9 @@
             // 
             this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.Honeydew;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // btnReceive
             // 
@@ -279,7 +281,7 @@
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
             this.Name = "FormMain";
-            this.Text = "Arduino";
+            this.Text = "Serial Arduino";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.grbConfig.ResumeLayout(false);
             this.grbConfig.PerformLayout();
