@@ -34,9 +34,9 @@ namespace SerialArduino
             
         }
 
-        private void lsbReceivedData_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnReceive_Click(object sender, EventArgs e)
         {
-
+            lsbReceivedData.Items.Add(Serial.Receive(Serial.port));
         }
 
     }
@@ -44,6 +44,7 @@ namespace SerialArduino
     {
         // ATTRIBUTI
         public int comPort, bauds;
+        public static SerialPort port;
         // COSTRUTTORE
         public Serial()
         {
@@ -53,9 +54,9 @@ namespace SerialArduino
         {
             try
             {
-                SerialPort port = new SerialPort("COM" + getComPort(), getBauds());
+                port = new SerialPort("COM" + getComPort(), getBauds());
                 port.Open();
-                
+                MessageBox.Show("COM"+ getComPort() + " open", "Serial arduino");
             }
             catch (Exception e)
             {
@@ -82,13 +83,13 @@ namespace SerialArduino
             return bauds;
         }
         // METODI
-        public static void Receive(SerialPort port)
+        public static String Receive(SerialPort port)
         {
-            Console.WriteLine("Reading data...");
+            MessageBox.Show("Reading data...", "Serial arduino");
             while (true)
             {
                 String data = port.ReadLine();
-                Console.WriteLine(data);
+                return data;
             }
 
         }

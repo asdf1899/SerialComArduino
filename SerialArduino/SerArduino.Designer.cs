@@ -151,7 +151,6 @@
             this.lsbReceivedData.Name = "lsbReceivedData";
             this.lsbReceivedData.Size = new System.Drawing.Size(120, 173);
             this.lsbReceivedData.TabIndex = 7;
-            this.lsbReceivedData.SelectedIndexChanged += new System.EventHandler(this.lsbReceivedData_SelectedIndexChanged);
             // 
             // lsbSentData
             // 
@@ -234,6 +233,7 @@
             this.btnReceive.TabIndex = 12;
             this.btnReceive.Text = "Receive";
             this.btnReceive.UseVisualStyleBackColor = false;
+            this.btnReceive.Click += new System.EventHandler(this.btnReceive_Click);
             // 
             // lblReceive
             // 
