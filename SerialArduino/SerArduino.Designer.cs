@@ -110,6 +110,7 @@
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textBox1
             // 
@@ -148,6 +149,7 @@
             this.lsbReceivedData.Name = "lsbReceivedData";
             this.lsbReceivedData.Size = new System.Drawing.Size(120, 173);
             this.lsbReceivedData.TabIndex = 7;
+            this.lsbReceivedData.SelectedIndexChanged += new System.EventHandler(this.lsbReceivedData_SelectedIndexChanged);
             // 
             // lsbSentData
             // 
@@ -203,7 +205,7 @@
             // 
             this.quitToolStripMenuItem.BackColor = System.Drawing.Color.Honeydew;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             // 
             // helpToolStripMenuItem
@@ -218,7 +220,7 @@
             // 
             this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.Honeydew;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // FormMain

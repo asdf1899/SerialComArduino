@@ -16,30 +16,51 @@ namespace SerialArduino
         public FormMain()
         {
             InitializeComponent();
+
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {        
+            
+            Serial serial = new Serial();
+            serial.setComPort(Convert.ToInt32(edtCom.Text));
+            serial.setBauds(Convert.ToInt32(edtBauds.Text));
+            serial.exec(serial.getComPort(), serial.getBauds());
+            
+        }
+
+        private void lsbReceivedData_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
     public class Serial
     {
         // ATTRIBUTI
         public int comPort, bauds;
         // COSTRUTTORE
-        public Serial(int comPort, int bauds)
+        public Serial()
         {
-            setComPort(comPort);
-            setBauds(bauds);
+
+        }
+        public void exec(int comPort, int bauds)
+        {
             try
             {
                 SerialPort port = new SerialPort("COM" + getComPort(), getBauds());
                 port.Open();
+                
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                MessageBox.Show(e.Message);
             }
 
         }
@@ -61,8 +82,16 @@ namespace SerialArduino
             return bauds;
         }
         // METODI
+        public static void Receive(SerialPort port)
+        {
+            Console.WriteLine("Reading data...");
+            while (true)
+            {
+                String data = port.ReadLine();
+                Console.WriteLine(data);
+            }
+
+        }
 
     }
-
-
 }
