@@ -33,15 +33,21 @@
             this.edtBauds = new System.Windows.Forms.TextBox();
             this.lblBauds = new System.Windows.Forms.Label();
             this.grbConfig = new System.Windows.Forms.GroupBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblCMD = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.lsbReceivedData = new System.Windows.Forms.ListBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.lsbSentData = new System.Windows.Forms.ListBox();
             this.lblSentData = new System.Windows.Forms.Label();
             this.lblReceivedData = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.asdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grbConfig.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCOM
@@ -92,6 +98,15 @@
             this.grbConfig.TabStop = false;
             this.grbConfig.Text = "Config";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(206, 55);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(102, 203);
@@ -127,15 +142,6 @@
             this.lsbReceivedData.Size = new System.Drawing.Size(120, 173);
             this.lsbReceivedData.TabIndex = 7;
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(206, 55);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
             // lsbSentData
             // 
             this.lsbSentData.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -165,6 +171,45 @@
             this.lblReceivedData.TabIndex = 10;
             this.lblReceivedData.Text = "Received data";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asdfToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // asdfToolStripMenuItem
+            // 
+            this.asdfToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quitToolStripMenuItem});
+            this.asdfToolStripMenuItem.Name = "asdfToolStripMenuItem";
+            this.asdfToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.asdfToolStripMenuItem.Text = "File";
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem.Text = "Quit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,11 +223,15 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblCMD);
             this.Controls.Add(this.grbConfig);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "Arduino";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.grbConfig.ResumeLayout(false);
             this.grbConfig.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +252,11 @@
         private System.Windows.Forms.ListBox lsbSentData;
         private System.Windows.Forms.Label lblSentData;
         private System.Windows.Forms.Label lblReceivedData;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem asdfToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
