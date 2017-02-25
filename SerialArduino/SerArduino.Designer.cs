@@ -41,13 +41,13 @@
             this.lsbSentData = new System.Windows.Forms.ListBox();
             this.lblSentData = new System.Windows.Forms.Label();
             this.lblReceivedData = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.asdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grbConfig.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCOM
@@ -62,6 +62,7 @@
             // 
             // edtCom
             // 
+            this.edtCom.BackColor = System.Drawing.Color.Honeydew;
             this.edtCom.Location = new System.Drawing.Point(86, 20);
             this.edtCom.Name = "edtCom";
             this.edtCom.Size = new System.Drawing.Size(100, 20);
@@ -69,6 +70,7 @@
             // 
             // edtBauds
             // 
+            this.edtBauds.BackColor = System.Drawing.Color.Honeydew;
             this.edtBauds.Location = new System.Drawing.Point(86, 55);
             this.edtBauds.Name = "edtBauds";
             this.edtBauds.Size = new System.Drawing.Size(100, 20);
@@ -86,6 +88,7 @@
             // 
             // grbConfig
             // 
+            this.grbConfig.BackColor = System.Drawing.Color.SeaGreen;
             this.grbConfig.Controls.Add(this.btnSave);
             this.grbConfig.Controls.Add(this.edtCom);
             this.grbConfig.Controls.Add(this.edtBauds);
@@ -100,15 +103,17 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.Honeydew;
             this.btnSave.Location = new System.Drawing.Point(206, 55);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
             this.textBox1.Location = new System.Drawing.Point(102, 203);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -126,15 +131,17 @@
             // 
             // btnSend
             // 
+            this.btnSend.BackColor = System.Drawing.Color.Honeydew;
             this.btnSend.Location = new System.Drawing.Point(222, 200);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(75, 23);
             this.btnSend.TabIndex = 6;
             this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             // 
             // lsbReceivedData
             // 
+            this.lsbReceivedData.BackColor = System.Drawing.Color.Honeydew;
             this.lsbReceivedData.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lsbReceivedData.FormattingEnabled = true;
             this.lsbReceivedData.Location = new System.Drawing.Point(487, 62);
@@ -144,6 +151,7 @@
             // 
             // lsbSentData
             // 
+            this.lsbSentData.BackColor = System.Drawing.Color.Honeydew;
             this.lsbSentData.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lsbSentData.FormattingEnabled = true;
             this.lsbSentData.Location = new System.Drawing.Point(326, 62);
@@ -155,7 +163,7 @@
             // 
             this.lblSentData.AutoSize = true;
             this.lblSentData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSentData.Location = new System.Drawing.Point(353, 36);
+            this.lblSentData.Location = new System.Drawing.Point(349, 36);
             this.lblSentData.Name = "lblSentData";
             this.lblSentData.Size = new System.Drawing.Size(70, 18);
             this.lblSentData.TabIndex = 9;
@@ -171,16 +179,17 @@
             this.lblReceivedData.TabIndex = 10;
             this.lblReceivedData.Text = "Received data";
             // 
-            // menuStrip1
+            // menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asdfToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(632, 24);
-            this.menuStrip1.TabIndex = 11;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(632, 24);
+            this.menu.TabIndex = 11;
+            this.menu.Text = "Menu";
             // 
             // asdfToolStripMenuItem
             // 
@@ -192,6 +201,7 @@
             // 
             // quitToolStripMenuItem
             // 
+            this.quitToolStripMenuItem.BackColor = System.Drawing.Color.Honeydew;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitToolStripMenuItem.Text = "Quit";
@@ -206,6 +216,7 @@
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.Honeydew;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
@@ -214,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(632, 293);
             this.Controls.Add(this.lblReceivedData);
             this.Controls.Add(this.lblSentData);
@@ -223,15 +235,15 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblCMD);
             this.Controls.Add(this.grbConfig);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menu);
+            this.MainMenuStrip = this.menu;
             this.Name = "FormMain";
             this.Text = "Arduino";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.grbConfig.ResumeLayout(false);
             this.grbConfig.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +264,7 @@
         private System.Windows.Forms.ListBox lsbSentData;
         private System.Windows.Forms.Label lblSentData;
         private System.Windows.Forms.Label lblReceivedData;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem asdfToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
