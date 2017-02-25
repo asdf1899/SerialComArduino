@@ -46,6 +46,8 @@
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReceive = new System.Windows.Forms.Button();
+            this.lblReceive = new System.Windows.Forms.Label();
             this.grbConfig.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -63,17 +65,17 @@
             // edtCom
             // 
             this.edtCom.BackColor = System.Drawing.Color.Honeydew;
-            this.edtCom.Location = new System.Drawing.Point(86, 20);
+            this.edtCom.Location = new System.Drawing.Point(97, 20);
             this.edtCom.Name = "edtCom";
-            this.edtCom.Size = new System.Drawing.Size(100, 20);
+            this.edtCom.Size = new System.Drawing.Size(120, 20);
             this.edtCom.TabIndex = 1;
             // 
             // edtBauds
             // 
             this.edtBauds.BackColor = System.Drawing.Color.Honeydew;
-            this.edtBauds.Location = new System.Drawing.Point(86, 55);
+            this.edtBauds.Location = new System.Drawing.Point(97, 55);
             this.edtBauds.Name = "edtBauds";
-            this.edtBauds.Size = new System.Drawing.Size(100, 20);
+            this.edtBauds.Size = new System.Drawing.Size(120, 20);
             this.edtBauds.TabIndex = 3;
             // 
             // lblBauds
@@ -96,7 +98,7 @@
             this.grbConfig.Controls.Add(this.lblBauds);
             this.grbConfig.Location = new System.Drawing.Point(16, 43);
             this.grbConfig.Name = "grbConfig";
-            this.grbConfig.Size = new System.Drawing.Size(287, 99);
+            this.grbConfig.Size = new System.Drawing.Size(337, 99);
             this.grbConfig.TabIndex = 4;
             this.grbConfig.TabStop = false;
             this.grbConfig.Text = "Config";
@@ -104,7 +106,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Honeydew;
-            this.btnSave.Location = new System.Drawing.Point(206, 55);
+            this.btnSave.Location = new System.Drawing.Point(240, 55);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 8;
@@ -115,16 +117,16 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox1.Location = new System.Drawing.Point(102, 203);
+            this.textBox1.Location = new System.Drawing.Point(113, 169);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(120, 20);
             this.textBox1.TabIndex = 5;
             // 
             // lblCMD
             // 
             this.lblCMD.AutoSize = true;
             this.lblCMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCMD.Location = new System.Drawing.Point(37, 206);
+            this.lblCMD.Location = new System.Drawing.Point(37, 171);
             this.lblCMD.Name = "lblCMD";
             this.lblCMD.Size = new System.Drawing.Size(43, 18);
             this.lblCMD.TabIndex = 4;
@@ -133,7 +135,7 @@
             // btnSend
             // 
             this.btnSend.BackColor = System.Drawing.Color.Honeydew;
-            this.btnSend.Location = new System.Drawing.Point(222, 200);
+            this.btnSend.Location = new System.Drawing.Point(256, 165);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(75, 23);
             this.btnSend.TabIndex = 6;
@@ -145,7 +147,7 @@
             this.lsbReceivedData.BackColor = System.Drawing.Color.Honeydew;
             this.lsbReceivedData.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lsbReceivedData.FormattingEnabled = true;
-            this.lsbReceivedData.Location = new System.Drawing.Point(487, 62);
+            this.lsbReceivedData.Location = new System.Drawing.Point(553, 231);
             this.lsbReceivedData.Name = "lsbReceivedData";
             this.lsbReceivedData.Size = new System.Drawing.Size(120, 173);
             this.lsbReceivedData.TabIndex = 7;
@@ -156,7 +158,7 @@
             this.lsbSentData.BackColor = System.Drawing.Color.Honeydew;
             this.lsbSentData.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lsbSentData.FormattingEnabled = true;
-            this.lsbSentData.Location = new System.Drawing.Point(326, 62);
+            this.lsbSentData.Location = new System.Drawing.Point(113, 231);
             this.lsbSentData.Name = "lsbSentData";
             this.lsbSentData.Size = new System.Drawing.Size(120, 173);
             this.lsbSentData.TabIndex = 8;
@@ -165,7 +167,7 @@
             // 
             this.lblSentData.AutoSize = true;
             this.lblSentData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSentData.Location = new System.Drawing.Point(349, 36);
+            this.lblSentData.Location = new System.Drawing.Point(37, 231);
             this.lblSentData.Name = "lblSentData";
             this.lblSentData.Size = new System.Drawing.Size(70, 18);
             this.lblSentData.TabIndex = 9;
@@ -175,7 +177,7 @@
             // 
             this.lblReceivedData.AutoSize = true;
             this.lblReceivedData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceivedData.Location = new System.Drawing.Point(496, 36);
+            this.lblReceivedData.Location = new System.Drawing.Point(433, 231);
             this.lblReceivedData.Name = "lblReceivedData";
             this.lblReceivedData.Size = new System.Drawing.Size(101, 18);
             this.lblReceivedData.TabIndex = 10;
@@ -189,7 +191,7 @@
             this.helpToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(632, 24);
+            this.menu.Size = new System.Drawing.Size(702, 24);
             this.menu.TabIndex = 11;
             this.menu.Text = "Menu";
             // 
@@ -223,12 +225,34 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
+            // btnReceive
+            // 
+            this.btnReceive.BackColor = System.Drawing.Color.Honeydew;
+            this.btnReceive.Location = new System.Drawing.Point(553, 165);
+            this.btnReceive.Name = "btnReceive";
+            this.btnReceive.Size = new System.Drawing.Size(75, 23);
+            this.btnReceive.TabIndex = 12;
+            this.btnReceive.Text = "Receive";
+            this.btnReceive.UseVisualStyleBackColor = false;
+            // 
+            // lblReceive
+            // 
+            this.lblReceive.AutoSize = true;
+            this.lblReceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceive.Location = new System.Drawing.Point(433, 165);
+            this.lblReceive.Name = "lblReceive";
+            this.lblReceive.Size = new System.Drawing.Size(101, 18);
+            this.lblReceive.TabIndex = 13;
+            this.lblReceive.Text = "Received data";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(632, 293);
+            this.ClientSize = new System.Drawing.Size(702, 420);
+            this.Controls.Add(this.lblReceive);
+            this.Controls.Add(this.btnReceive);
             this.Controls.Add(this.lblReceivedData);
             this.Controls.Add(this.lblSentData);
             this.Controls.Add(this.lsbSentData);
@@ -271,6 +295,8 @@
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Button btnReceive;
+        private System.Windows.Forms.Label lblReceive;
     }
 }
 
