@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
 
 namespace SerialArduino
 {
     public partial class FormMain : Form
     {
+        public Boolean loop = true;
         public FormMain()
         {
             InitializeComponent();
@@ -36,7 +38,21 @@ namespace SerialArduino
 
         private void btnReceive_Click(object sender, EventArgs e)
         {
-            lsbReceivedData.Items.Add(Serial.Receive(Serial.port));
+            MessageBox.Show("Reading data...", "Serial Arduino");
+            while(loop){
+                lsbReceivedData.Items.Add(Serial.Receive(Serial.port));
+                Thread.Sleep(1000);
+            }
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            loop = false;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lsbReceivedData.Items.Clear();
         }
 
     }
@@ -85,7 +101,6 @@ namespace SerialArduino
         // METODI
         public static String Receive(SerialPort port)
         {
-            MessageBox.Show("Reading data...", "Serial arduino");
             while (true)
             {
                 String data = port.ReadLine();

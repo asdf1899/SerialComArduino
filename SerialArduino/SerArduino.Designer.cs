@@ -47,7 +47,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReceive = new System.Windows.Forms.Button();
-            this.lblReceive = new System.Windows.Forms.Label();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.grbConfig.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -227,7 +228,7 @@
             // btnReceive
             // 
             this.btnReceive.BackColor = System.Drawing.Color.Honeydew;
-            this.btnReceive.Location = new System.Drawing.Point(553, 165);
+            this.btnReceive.Location = new System.Drawing.Point(436, 293);
             this.btnReceive.Name = "btnReceive";
             this.btnReceive.Size = new System.Drawing.Size(75, 23);
             this.btnReceive.TabIndex = 12;
@@ -235,15 +236,27 @@
             this.btnReceive.UseVisualStyleBackColor = false;
             this.btnReceive.Click += new System.EventHandler(this.btnReceive_Click);
             // 
-            // lblReceive
+            // btnStop
             // 
-            this.lblReceive.AutoSize = true;
-            this.lblReceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceive.Location = new System.Drawing.Point(433, 165);
-            this.lblReceive.Name = "lblReceive";
-            this.lblReceive.Size = new System.Drawing.Size(101, 18);
-            this.lblReceive.TabIndex = 13;
-            this.lblReceive.Text = "Received data";
+            this.btnStop.BackColor = System.Drawing.Color.Honeydew;
+            this.btnStop.Location = new System.Drawing.Point(436, 336);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 13;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseVisualStyleBackColor = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Honeydew;
+            this.btnClear.Location = new System.Drawing.Point(436, 381);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 14;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FormMain
             // 
@@ -251,7 +264,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(702, 420);
-            this.Controls.Add(this.lblReceive);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnReceive);
             this.Controls.Add(this.lblReceivedData);
             this.Controls.Add(this.lblSentData);
@@ -296,7 +310,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button btnReceive;
-        private System.Windows.Forms.Label lblReceive;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
