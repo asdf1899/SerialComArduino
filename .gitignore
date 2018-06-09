@@ -1,0 +1,13 @@
+bin/
+
+obj/
+
+.vs/
+
+Properties/
+
+*.csproj
+
+*.sln
+
+*.suo
