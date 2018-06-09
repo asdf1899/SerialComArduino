@@ -8,6 +8,8 @@ SerialArduino/Properties/
 
 SerialArduino/*.csproj
 
+*.csproj
+
 *.sln
 
 *.suo
