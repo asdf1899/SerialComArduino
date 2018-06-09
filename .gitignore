@@ -1,0 +1,13 @@
+SerialArduino/bin/
+
+SerialArduino/obj/
+
+.vs/
+
+SerialArduino/Properties/
+
+SerialArduino/*.csproj
+
+*.sln
+
+*.suo
